@@ -5,6 +5,10 @@ public class Main {
                 .color("Красивый цвет")
                 .build();
 
-        System.out.println(car.toString());
+        System.out.println(car);
+
+        car = Car.builder().build();
+
+        System.out.println(car);
     }
 }

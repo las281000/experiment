@@ -1,5 +1,5 @@
 public class Car {
-        private static Builder builder = null;
+       // private static Builder builder = null;
         private String model;
         private String color;
 
@@ -9,10 +9,7 @@ public class Car {
         }
 
         public static Builder builder(){
-            if (builder == null){
-                builder = new Builder();
-            }
-            return builder;
+            return new Builder();
         }
 
         @Override
